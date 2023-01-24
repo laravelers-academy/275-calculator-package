@@ -1,0 +1,36 @@
+{
+    "name": "laravelers-academy/laravel-package",
+    "description": "Mi primer paquete de laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "LaravelersAcademy\\LaravelPackage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelersAcademy\\LaravelPackage\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Homero Raul",
+            "email": "h.raulvc@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelersAcademy\\LaravelPackage\\Providers\\LaravelAppServiceProvider"
+            ],
+            "aliases": {
+                "Calculator": "LaravelersAcademy\\LaravelPackage\\Facades\\Calculator"
+            }
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "10.0.x-dev"
+    }
+}
