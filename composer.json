@@ -31,6 +31,12 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "10.0.x-dev"
+        "phpunit/phpunit": "10.0.x-dev",
+        "orchestra/testbench": "3.4.x-dev"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
     }
 }
